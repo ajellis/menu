@@ -1,13 +1,17 @@
 <div class="menu" align= center>
-  <h1> :. Big A's Grill .: </h1>
-  <h4> Too delicious to be a legitimate business</h4><br><br>
-
+  <h1> :. Big A's Backyard Barbeque! .: </h1>
+  <h4> Too delicious to be a legitimate business</h4>
+  <h5>123 Fake Address Lane<br>
+     Not-A-City NC, 00000</h5>
+  <h5>(919)555-5555<h5>
+</div>
+<br><br>
+  <div class="menu-items" align= center>
   <h2>Menu</h2>
   =====================================<br><br>
   <h3>Appetizers</h3>
   <h5>Prepare yourself for the deliciousness that is about to come... BY EATING SOME DELICIOUSNESS!</h5>
-  <%= image_tag asset_url("mozza_sticks.jpg"), class: "appetizer"%><br><br>
-    <div class="menu-items">
+  <%= image_tag asset_url("appetizer.jpg"), class: "food-pics"%><br><br>
       <% @dishes.each do |dish| %>
         <% if dish.course_id == 1 %>
           <p>
@@ -20,6 +24,7 @@
   -------------------------------------<br>
   <h3>Entrees</h3>
   <h5>Where the REAL party begins. This is what you came here for, right?</h5>
+    <%= image_tag asset_url("entree.jpg"), class: "food-pics"%><br><br>
   <% @dishes.each do |dish| %>
     <% if dish.course_id == 2 %>
       <p>
@@ -32,6 +37,7 @@
   -------------------------------------<br>
   <h3>Desserts!</h3>
   <h5>I know you're not full already! There's gotta be room in there for some more goodies!</h5>
+      <%= image_tag asset_url("dessert.jpeg"), class: "food-pics"%><br><br>
   <% @dishes.each do |dish| %>
     <% if dish.course_id == 3 %>
       <p>
@@ -40,6 +46,7 @@
         </p>
       <% end %>
     <% end %>
+  </div>
 <br><br>
 
 
@@ -47,4 +54,3 @@
   =======================<br>
   <%= link_to "Add A new Item to Menu", new_dish_path %> |
   <br>=======================
-</div>
