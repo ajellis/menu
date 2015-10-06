@@ -3,6 +3,6 @@
 #
 # Examples:
 
-Course.create([{name: 'Entrees'}, {name: 'Desserts'}, {name: 'Drinks'}, {name: 'Salads'}, {name: 'Appetizers'}])
+Course.create([{name: 'Appetizers'}, {name: 'Entrees'}, {name: 'Desserts'}])
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)

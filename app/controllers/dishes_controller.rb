@@ -1,6 +1,9 @@
 class DishesController < ApplicationController
   before_action :set_dish, only: [:show, :edit, :update, :destroy]
 
+  # validates :name, presence: true
+  # validates :name, uniqueness: true
+
   # GET /dishes
   def index
     @dishes = Dish.all
