@@ -15,7 +15,8 @@
       <% @dishes.each do |dish| %>
         <% if dish.course_id == 1 %>
           <p>
-            <p><span class="dish-info"><%= link_to dish.name, edit_dish_path(dish) %> $<%= dish.price %></span></p>
+            <p><span class="dish-info"><%= link_to dish.name, edit_dish_path(dish) %>
+              <br>Price: $<%= dish.price %></span></p>
             <p><span class="description"><%= dish.description %></p></span>
             </p>
           <% end %>
@@ -28,7 +29,8 @@
   <% @dishes.each do |dish| %>
     <% if dish.course_id == 2 %>
       <p>
-        <p><span class="dish-info"><%= link_to dish.name, edit_dish_path(dish) %> $<%= dish.price %></span></p>
+        <p><span class="dish-info"><%= link_to dish.name, edit_dish_path(dish) %> <br>
+          Price: $<%= dish.price %></span></p>
         <p><span class="description"><%= dish.description %></p></span>
         </p>
       <% end %>
@@ -41,7 +43,8 @@
   <% @dishes.each do |dish| %>
     <% if dish.course_id == 3 %>
       <p>
-        <p><span class="dish-info"><%= link_to dish.name, edit_dish_path(dish) %> $<%= dish.price %></span></p>
+        <p><span class="dish-info"><%= link_to dish.name, edit_dish_path(dish) %>
+          <br>Price: $<%= dish.price %></span></p>
         <p><span class="description"><%= dish.description %></p></span>
         </p>
       <% end %>
